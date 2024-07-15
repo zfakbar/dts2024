@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DigitalTalent</string>
+
+    <string name="txt_email">Email</string>
+    <string name="txt_username">Username</string>
+
+    <string name="txt_input_username">Input Username</string>
+    <string name="txt_input_password">Input Password</string>
+
+    <string name="txt_password">Password</string>
+    <string name="txt_forgot_password">Forgot Password</string>
+    <string name="txt_email_field_kosong">Email tidak boleh kosong</string>
+    <string name="txt_pass_field_kosong">Password tidak boleh kosong</string>
+    <string name="txt_email_tidak_valid">Email tidak valid</string>
+    <string name="txt_dont_have_password">Don’t have an account? Register here!</string>
+</resources>
