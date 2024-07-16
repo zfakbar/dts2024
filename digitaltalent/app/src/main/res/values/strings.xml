@@ -13,4 +13,7 @@
     <string name="txt_pass_field_kosong">Password tidak boleh kosong</string>
     <string name="txt_email_tidak_valid">Email tidak valid</string>
     <string name="txt_dont_have_password">Don’t have an account? Register here!</string>
+    <string name="txt_email_2">Email</string>
+    <string name="txt_re_type_password">Re-type Password</string>
+    <string name="txt_phone_number">Phone Number</string>
 </resources>

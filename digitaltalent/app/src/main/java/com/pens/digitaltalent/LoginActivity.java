@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -17,34 +18,46 @@ public class LoginActivity extends AppCompatActivity {
     public static final String FILENAME = "login";
 
     EditText edUserName, edPassword;
+
     Button btnLogin;
 
     TextView tvPassword;
     TextView tvRegister;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        btnLogin = findViewById(R.id.btn_login);
         edUserName = findViewById(R.id.ed_email);
         edPassword = findViewById(R.id.ed_password);
         btnLogin = findViewById(R.id.btn_login);
         tvPassword = findViewById(R.id.tv_password);
         tvRegister = findViewById(R.id.tv_register);
-
         btnLogin.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Log.d("LoginActivity", "Test Login");
+            @Override
+            public void onClick(View view) {
                 checkLogin();
             }
         });
+
+
+//        btnLogin.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                Log.d("LoginActivity", "Test Login");
+//                checkLogin();
+//            }
+//        });
     }
 
     private void checkLogin() {
+
         String email = edUserName.getText().toString().trim();
         String password = edPassword.getText().toString().trim();
         Log.d("LoginActivity", "Email : " + email + " password : " + password);
+
 
         if (TextUtils.isEmpty(edUserName.getText().toString().trim())
                 && TextUtils.isEmpty(edPassword.getText().toString().trim())) {
@@ -75,6 +88,7 @@ public class LoginActivity extends AppCompatActivity {
 
         Log.d("LoginActivity", "onRegister");
     }
+
 
 
 }

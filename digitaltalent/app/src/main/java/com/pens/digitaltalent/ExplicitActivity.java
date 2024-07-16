@@ -39,6 +39,12 @@ public class ExplicitActivity extends AppCompatActivity {
         moveIntentWithData.putExtra(KEY_NAME, name);
         moveIntentWithData.putExtra(KEY_INSTITUSI, institusi);
 
+        Bundle mBundle = new Bundle();
+        mBundle.putString("CONTOHString", "String");
+        mBundle.putInt("CONTOHINT", 4);
+
+        moveIntentWithData.putExtra("BUNDLE",mBundle);
+
 
         startActivity(moveIntentWithData);
     }

@@ -17,6 +17,10 @@ public class TampilActivity extends AppCompatActivity {
         tvName = findViewById(R.id.tv_name);
         tvInstitusi = findViewById(R.id.tv_institusi);
 
+
+        Bundle bundle = getIntent().getBundleExtra("CONTOH");
+
+        String strBundle = bundle.getString("CONTOHString");
         String name = getIntent().getStringExtra(ExplicitActivity.KEY_NAME);
         String instansi = getIntent().getStringExtra(ExplicitActivity.KEY_INSTITUSI);
 

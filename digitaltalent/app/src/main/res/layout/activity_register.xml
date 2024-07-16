@@ -48,7 +48,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:ems="10"
-                        android:hint="Email"
+                        android:hint="@string/txt_email_2"
                         android:inputType="textPersonName" />
 
                     <EditText
@@ -66,7 +66,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:ems="10"
-                        android:hint="Re-type Password"
+                        android:hint="@string/txt_re_type_password"
                         android:inputType="textPassword" />
 
                     <EditText
@@ -75,7 +75,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:ems="10"
-                        android:hint="Phone Number"
+                        android:hint="@string/txt_phone_number"
                         android:inputType="phone" />
 
                     <EditText
@@ -134,7 +134,9 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/btn_radius"
-        android:text="Register" />
+        android:text="Register"
+        android:onClick="postRegister"
+        />
 
 
 </RelativeLayout>

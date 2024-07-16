@@ -3,17 +3,13 @@ package com.pens.digitaltalent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 
-public class RegisterActivity extends AppCompatActivity {
+public class ViewListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
-    }
-
-    public void postRegister(View view) {
+        setContentView(R.layout.activity_view_list);
 
 
     }

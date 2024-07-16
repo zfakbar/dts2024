@@ -12,6 +12,9 @@
         android:theme="@style/Theme.DigitalTalent"
         tools:targetApi="31">
         <activity
+            android:name=".ViewListActivity"
+            android:exported="false" />
+        <activity
             android:name=".InfoActivity"
             android:exported="false" />
         <activity
@@ -49,7 +52,8 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.DigitalTalent.NoActionBar" />
     </application>
 
 </manifest>
